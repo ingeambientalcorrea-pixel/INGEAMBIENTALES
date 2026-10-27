@@ -2,7 +2,7 @@
 
 Aplicativo interactivo de orientación vocacional para estudiantes de último año de bachillerato. Diseñado para un docente, un proyector y equipos que toman decisiones con evidencia.
 
-## Aventura anime · seis mundos de 4–6 minutos
+## Aventura de ingeniería · seis mundos de 4–6 minutos
 
 - **La quebrada pide aire:** explorar pistas, usar un kit en tres estaciones y construir un circuito de tratamiento con módulos.
 - **Conecta la vida:** comparar parches y resolver un puzzle de conexión con vegetación nativa y un paso de fauna.
@@ -11,7 +11,7 @@ Aplicativo interactivo de orientación vocacional para estudiantes de último a�
 - **Aire:** diseñar una red de monitoreo y comparar registros de partículas con las condiciones del viento.
 - **Materiales:** decidir rutas de prevención, reúso, aprovechamiento y gestión diferenciada de residuos de un campus.
 
-Presentación de aventura anime para estudiantes de bachillerato, personajes jóvenes adultos, detalles kawaii sutiles, escenarios andinos ilustrados, textos grandes, instrumentos visuales y seis minijuegos con mecánicas diferentes. Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
+Presentación de aventura para estudiantes de bachillerato, con profesionales jóvenes adultos de estilo cómic, escenarios andinos ilustrados, textos grandes, instrumentos visuales y seis minijuegos con mecánicas diferentes. Cada reto presenta un personaje distinto con vestimenta, elementos de protección y herramientas acordes a su trabajo: Valeria (agua), Tomás (biodiversidad), Sara (obra), Mateo (eficiencia industrial), Nicolás (aire) y Mariana (materiales). Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
 
 ## Publicar con GitHub Pages
 
@@ -42,7 +42,7 @@ Votos, resultados e ideas se guardan solamente en el navegador (`localStorage`).
 
 La información institucional se consultó en fuentes oficiales del COLMAYOR el **27 de octubre de 2026**. En `program.js` se conservan los enlaces y la vigencia de cada dato. Los valores de PIN 2027-1, las tarifas 2026 y las convocatorias de apoyo se muestran diferenciados por periodo.
 
-Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada, la guía y los escenarios anime son ilustraciones generadas con IA de situaciones ficticias. Los diagramas, instrumentos y controles son originales. Las fuentes locales incluyen sus licencias en `assets/`. El video oficial requiere conexión a YouTube.
+Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada, los seis personajes de cómic y los escenarios son ilustraciones generadas con IA de situaciones ficticias. Los personajes son ficticios y no representan a docentes ni egresados de la institución. Los diagramas, instrumentos y controles son originales. Las fuentes locales incluyen sus licencias en `assets/`. El video oficial requiere conexión a YouTube.
 
 ## Archivos
 
@@ -52,7 +52,8 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 - `arcade.js` y `arcade.css`: cuatro minijuegos de acción, controles táctiles y de teclado.
 - `art.js`: diagramas e instrumentos originales de los retos iniciales.
 - `game-theme.css`: base visual de la aventura.
-- `anime-theme.css`: estética anime juvenil con Manrope y DM Sans.
+- `anime-theme.css`: base visual juvenil con Manrope y DM Sans.
+- `comic-characters.css`: presentación del equipo de ingeniería y sus personajes por misión.
 - `worlds-extra.js` y `worlds-extra.css`: casos y minijuegos de aire y residuos.
 - `worlds-integration.js`: integra los seis mundos, las ilustraciones y las insignias.
 - `cases.js`: cuatro casos didácticos.
