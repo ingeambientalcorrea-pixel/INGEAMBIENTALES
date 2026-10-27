@@ -13,9 +13,9 @@ window.CASES = [
     course: 'Agua, química ambiental y tratamiento de vertimientos',
     palette: ['#137e9b', '#b2e7d7'],
     hotspots: [
-      {label: '01', title: 'Antes de la descarga', text: 'El punto aguas arriba sirve para comparar. El aspecto transparente no garantiza buena calidad.', x: 20, y: 63},
-      {label: '02', title: 'El vertimiento', text: 'Sale de una planta de alimentos y tiene aspecto lechoso. Es una pista; todavía no es un diagnóstico.', x: 44, y: 47},
-      {label: '03', title: 'Aguas abajo', text: 'Hay peces en la superficie. Investiga oxígeno, temperatura y otros posibles aportes a la quebrada.', x: 78, y: 27}
+      {label: '01', title: 'Antes de la descarga', text: 'El punto aguas arriba sirve para comparar. El aspecto transparente no garantiza buena calidad.', x: 78, y: 39},
+      {label: '02', title: 'El vertimiento', text: 'Sale de una planta de alimentos y tiene aspecto lechoso. Es una pista; todavía no es un diagnóstico.', x: 50, y: 49},
+      {label: '03', title: 'Aguas abajo', text: 'Hay peces en la superficie. Investiga oxígeno, temperatura y otros posibles aportes a la quebrada.', x: 21, y: 74}
     ],
     stages: [
       {
@@ -70,7 +70,7 @@ window.CASES = [
     hotspots: [
       {label: '01', title: 'Bosque mayor', text: 'Es el parche de mayor extensión. Puede albergar hábitats distintos a los parches pequeños.', x: 15, y: 28},
       {label: '02', title: 'Parche conectado', text: 'Una franja de vegetación conserva una conexión. Hay que comprobar qué especies la utilizan.', x: 77, y: 19},
-      {label: '03', title: 'Parche aislado', text: 'Zonas abiertas separan este parche. La distancia y el tipo de cobertura pueden afectar el movimiento de la fauna.', x: 52, y: 83}
+      {label: '03', title: 'Parche aislado', text: 'Zonas abiertas separan este parche. La distancia y el tipo de cobertura pueden afectar el movimiento de la fauna.', x: 55, y: 74}
     ],
     stages: [
       {

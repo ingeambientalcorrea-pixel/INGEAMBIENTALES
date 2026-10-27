@@ -2,14 +2,16 @@
 
 Aplicativo interactivo de orientación vocacional para estudiantes de último año de bachillerato. Diseñado para un docente, un proyector y equipos que toman decisiones con evidencia.
 
-## Aventura visual · cuatro mundos de 4–5 minutos
+## Aventura anime · seis mundos de 4–6 minutos
 
 - **La quebrada pide aire:** explorar pistas, usar un kit en tres estaciones y construir un circuito de tratamiento con módulos.
 - **Conecta la vida:** comparar parches y resolver un puzzle de conexión con vegetación nativa y un paso de fauna.
 - **La lluvia pone a prueba:** investigar sedimentos, colocar defensas y activar una tormenta para probar el plan.
 - **Seis fichas para cambiar:** invertir un presupuesto limitado para reducir el uso de agua y energía en una industria.
+- **Aire:** diseñar una red de monitoreo y comparar registros de partículas con las condiciones del viento.
+- **Materiales:** decidir rutas de prevención, reúso, aprovechamiento y gestión diferenciada de residuos de un campus.
 
-Presentación de videojuego con islas ilustradas, mascota capibara, colores vivos, textos grandes, instrumentos visuales, animaciones y cuatro minijuegos de acción. Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
+Presentación de aventura anime para estudiantes de bachillerato, personajes jóvenes adultos, detalles kawaii sutiles, escenarios andinos ilustrados, textos grandes, instrumentos visuales y seis minijuegos con mecánicas diferentes. Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
 
 ## Publicar con GitHub Pages
 
@@ -22,7 +24,7 @@ Los archivos están listos en la raíz de `main`. No requieren instalación ni c
 
 Dirección esperada al activar Pages: https://ingeambientalcorrea-pixel.github.io/INGEAMBIENTALES/
 
-El repositorio es público. Para publicarlo hay que activar GitHub Pages en Settings → Pages; cambiar la visibilidad por sí solo no activa el alojamiento.
+El repositorio es público y GitHub Pages publica la rama main desde la raíz. Los cambios aprobados se publican al subir un nuevo commit y completar el flujo de Pages.
 
 ## Probar la aventura descargable
 
@@ -40,7 +42,7 @@ Votos, resultados e ideas se guardan solamente en el navegador (`localStorage`).
 
 La información institucional se consultó en fuentes oficiales del COLMAYOR el **27 de octubre de 2026**. En `program.js` se conservan los enlaces y la vigencia de cada dato. Los valores de PIN 2027-1, las tarifas 2026 y las convocatorias de apoyo se muestran diferenciados por periodo.
 
-Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada es una imagen ilustrativa generada; los mapas e instrumentos son ilustraciones originales. Las fuentes locales incluyen sus licencias en `assets/`. El video oficial requiere conexión a YouTube.
+Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada, la guía y los escenarios anime son ilustraciones generadas con IA de situaciones ficticias. Los diagramas, instrumentos y controles son originales. Las fuentes locales incluyen sus licencias en `assets/`. El video oficial requiere conexión a YouTube.
 
 ## Archivos
 
@@ -48,8 +50,11 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 - `styles.css`: diseño adaptable y fuentes locales.
 - `app.js`: navegación, exploración, muestreos, votaciones y bitácora.
 - `arcade.js` y `arcade.css`: cuatro minijuegos de acción, controles táctiles y de teclado.
-- `art.js`: escenas vectoriales, mascota e instrumentos originales.
-- `game-theme.css`: diseño visual de aventura y tipografía Fredoka.
+- `art.js`: diagramas e instrumentos originales de los retos iniciales.
+- `game-theme.css`: base visual de la aventura.
+- `anime-theme.css`: estética anime juvenil con Manrope y DM Sans.
+- `worlds-extra.js` y `worlds-extra.css`: casos y minijuegos de aire y residuos.
+- `worlds-integration.js`: integra los seis mundos, las ilustraciones y las insignias.
 - `cases.js`: cuatro casos didácticos.
 - `program.js`: información institucional y fuentes.
 - `assets/`: imágenes, fuentes y licencias.
@@ -57,4 +62,4 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 
 ## Verificación
 
-Se comprobaron los cuatro recorridos y minijuegos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.
+Se comprobaron los seis recorridos y minijuegos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.
