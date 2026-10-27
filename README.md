@@ -2,14 +2,14 @@
 
 Aplicativo interactivo de orientación vocacional para estudiantes de último año de bachillerato. Diseñado para un docente, un proyector y equipos que toman decisiones con evidencia.
 
-## Cuatro misiones de 4–5 minutos
+## Aventura visual · cuatro mundos de 4–5 minutos
 
-- **La quebrada pide aire:** explorar pistas, elegir herramientas y probar un tratamiento de aguas residuales.
-- **Conecta la vida:** comparar parches de bosque y trazar alternativas de restauración.
-- **La lluvia pone a prueba:** investigar el arrastre de sedimentos e instalar medidas de prevención en una obra vial.
+- **La quebrada pide aire:** explorar pistas, usar un kit en tres estaciones y construir un circuito de tratamiento con módulos.
+- **Conecta la vida:** comparar parches y resolver un puzzle de conexión con vegetación nativa y un paso de fauna.
+- **La lluvia pone a prueba:** investigar sedimentos, colocar defensas y activar una tormenta para probar el plan.
 - **Seis fichas para cambiar:** invertir un presupuesto limitado para reducir el uso de agua y energía en una industria.
 
-Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
+Presentación de videojuego con islas ilustradas, mascota capibara, colores vivos, textos grandes, instrumentos visuales, animaciones y cuatro minijuegos de acción. Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
 
 ## Publicar con GitHub Pages
 
@@ -22,7 +22,13 @@ Los archivos están listos en la raíz de `main`. No requieren instalación ni c
 
 Dirección esperada al activar Pages: https://ingeambientalcorrea-pixel.github.io/INGEAMBIENTALES/
 
-El repositorio es privado. GitHub Pages en repositorios privados depende del plan de la cuenta. Si GitHub solicita un cambio de plan o visibilidad, conserva la privacidad hasta que el propietario decida cómo proceder. No es necesario cambiar la visibilidad del repositorio para guardar o revisar este código.
+El repositorio es público. Para publicarlo hay que activar GitHub Pages en Settings → Pages; cambiar la visibilidad por sí solo no activa el alojamiento.
+
+## Probar la aventura descargable
+
+[Descargar el aplicativo en un solo archivo HTML (ZIP)](https://github.com/ingeambientalcorrea-pixel/INGEAMBIENTALES/raw/refs/heads/main/descargas/Mision-Ambiental-COLMAYOR.zip)
+
+Descomprime el ZIP y abre **Mision-Ambiental-COLMAYOR.html**. Contiene ilustraciones, tipografías, estilos y juegos; no requiere instalación. Los retos funcionan sin conexión, y el video y los enlaces oficiales requieren internet.
 
 ## Usar en el salón
 
@@ -40,7 +46,10 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 
 - `index.html`: estructura de la aplicación.
 - `styles.css`: diseño adaptable y fuentes locales.
-- `app.js`: navegación, juegos, simuladores, votaciones y bitácora.
+- `app.js`: navegación, exploración, muestreos, votaciones y bitácora.
+- `arcade.js` y `arcade.css`: cuatro minijuegos de acción, controles táctiles y de teclado.
+- `art.js`: escenas vectoriales, mascota e instrumentos originales.
+- `game-theme.css`: diseño visual de aventura y tipografía Fredoka.
 - `cases.js`: cuatro casos didácticos.
 - `program.js`: información institucional y fuentes.
 - `assets/`: imágenes, fuentes y licencias.
@@ -48,4 +57,4 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 
 ## Verificación
 
-Se comprobaron los cuatro recorridos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.
+Se comprobaron los cuatro recorridos y minijuegos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.

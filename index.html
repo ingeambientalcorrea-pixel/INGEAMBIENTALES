@@ -4,18 +4,18 @@
 <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Misión Ambiental · COLMAYOR</title>
 <meta name="description" content="Observa, mide y transforma. Cuatro misiones interactivas para descubrir la Ingeniería Ambiental en Colombia con el Colegio Mayor de Antioquia.">
-<meta name="theme-color" content="#123b31"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css">
+<meta name="theme-color" content="#4169ff"><link rel="icon" href="assets/icon.svg" type="image/svg+xml"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="game-theme.css"><link rel="stylesheet" href="arcade.css">
 </head>
 <body>
 <a class="skip" href="#main">Saltar al contenido</a>
 <header class="topbar">
 <a class="brand" href="#inicio" aria-label="Misión Ambiental, inicio"><span class="brand-icon" aria-hidden="true"><svg viewBox="0 0 30 30"><path d="M7 23C0 7 13 4 26 4c0 14-3 24-16 21M7 26 21 11M14 19l-1-8m2 6 8 1"/></svg></span><span>MISIÓN<span class="brand-bottom">AMBIENTAL<span class="brand-dot">.</span></span></span></a>
-<nav aria-label="Navegación principal"><a href="#inicio" data-nav="inicio">Misiones</a><a href="#herramientas" data-nav="herramientas">Tu kit de campo</a><a href="#programa" data-nav="programa">Estudia en COLMAYOR <span aria-hidden="true">↗</span></a></nav>
-<div class="header-actions"><button id="sound-toggle" class="icon-btn" aria-label="Activar lectura en voz alta" aria-pressed="false" title="Leer instrucciones en voz alta">◖))</button><button class="teacher-btn" data-route="aula"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v11H4zM8 21l4-6 4 6M8 8h8M8 11h5"/></svg><span>Modo docente</span></button></div>
+<nav aria-label="Navegación principal"><a href="#inicio" data-nav="inicio">Mapa de misiones</a><a href="#herramientas" data-nav="herramientas">Inventario</a><a href="#programa" data-nav="programa">Tu futuro <span aria-hidden="true">↗</span></a></nav>
+<div class="header-actions"><span class="hud-badges" title="Insignias de mundos completados"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m12 2 3 6.2 6.8 1-4.9 4.8 1.2 6.8-6.1-3.2-6.1 3.2 1.2-6.8L2.2 9.2l6.8-1Z"/></svg><span id="badge-count">0/4</span></span><button id="sound-toggle" class="icon-btn" aria-label="Activar lectura en voz alta" aria-pressed="false" title="Leer instrucciones en voz alta">◖))</button><button class="teacher-btn" data-route="aula"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16v11H4zM8 21l4-6 4 6M8 8h8M8 11h5"/></svg><span>Modo docente</span></button></div>
 </header>
 <main id="main" tabindex="-1"></main>
-<footer><a href="#inicio" class="footer-name">MISIÓN AMBIENTAL<span> · COLMAYOR</span></a><p>Aprender haciendo. Decidir con evidencia.</p><button class="text-btn" data-action="sources">Fuentes y créditos ↗</button></footer>
+<footer><a href="#inicio" class="footer-name">MISIÓN AMBIENTAL<span> · COLMAYOR</span></a><p>¡Un equipo. Cuatro mundos. Muchas posibilidades!</p><button class="text-btn" data-action="sources">Fuentes y créditos ↗</button></footer>
 <dialog id="modal"><button id="close-modal" class="modal-close" aria-label="Cerrar ventana">✕</button><div id="modal-content"></div></dialog>
 <div id="toast" role="status"></div>
-<script src="program.js"></script><script src="cases.js"></script><script src="app.js"></script>
+<script src="art.js"></script><script src="arcade.js"></script><script src="program.js"></script><script src="cases.js"></script><script src="app.js"></script>
 </body></html>
