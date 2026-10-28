@@ -4,14 +4,21 @@ Aplicativo interactivo de orientación vocacional para estudiantes de último a�
 
 ## Aventura de ingeniería · seis mundos de 4–6 minutos
 
-- **La quebrada pide aire:** explorar pistas, usar un kit en tres estaciones y construir un circuito de tratamiento con módulos.
-- **Conecta la vida:** comparar parches y resolver un puzzle de conexión con vegetación nativa y un paso de fauna.
-- **La lluvia pone a prueba:** investigar sedimentos, colocar defensas y activar una tormenta para probar el plan.
+- **La quebrada pide aire:** buscar pistas, medir en tres puntos y armar una solución para limpiar el agua.
+- **Conecta la vida:** comparar bosques y unirlos con plantas de la zona y un cruce para animales.
+- **La lluvia pone a prueba:** seguir la tierra que arrastra la lluvia, colocar defensas y activar una tormenta para probar el plan.
 - **Seis fichas para cambiar:** invertir un presupuesto limitado para reducir el uso de agua y energía en una industria.
-- **Aire:** diseñar una red de monitoreo y comparar registros de partículas con las condiciones del viento.
-- **Materiales:** decidir rutas de prevención, reúso, aprovechamiento y gestión diferenciada de residuos de un campus.
+- **Aire:** elegir dónde medir el aire y comparar los resultados con el viento.
+- **Materiales:** evitar basura, volver a usar materiales y decidir dónde entregarlos después de un evento.
 
 Presentación de aventura para estudiantes de bachillerato, con profesionales jóvenes adultos de estilo cómic, escenarios andinos ilustrados, textos grandes, instrumentos visuales y seis minijuegos con mecánicas diferentes. Cada reto presenta un personaje distinto con vestimenta, elementos de protección y herramientas acordes a su trabajo: Valeria (agua), Tomás (biodiversidad), Sara (obra), Mateo (eficiencia industrial), Nicolás (aire) y Mariana (materiales). Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
+
+La versión escolar usa frases breves, explica las unidades junto a los gráficos y deja los números avanzados como información opcional. La sección del programa combina imágenes con un recorrido visual y muestra todas las materias por semestre, con sus créditos y el enlace a la malla oficial.
+
+Videos incluidos:
+
+- [Qué hace un ingeniero (a) ambiental](https://youtu.be/Zal9EWfQe40).
+- [Te invitamos a Ingeniería Ambiental COLMAYOR](https://youtube.com/shorts/pWRHehoopz4).
 
 ## Publicar con GitHub Pages
 
@@ -30,7 +37,7 @@ El repositorio es público y GitHub Pages publica la rama main desde la raíz. L
 
 [Descargar el aplicativo en un solo archivo HTML (ZIP)](https://github.com/ingeambientalcorrea-pixel/INGEAMBIENTALES/raw/refs/heads/main/descargas/Mision-Ambiental-COLMAYOR.zip)
 
-Descomprime el ZIP y abre **Mision-Ambiental-COLMAYOR.html**. Contiene ilustraciones, tipografías, estilos y juegos; no requiere instalación. Los retos funcionan sin conexión, y el video y los enlaces oficiales requieren internet.
+Descomprime el ZIP y abre **Mision-Ambiental-COLMAYOR.html**. Contiene ilustraciones, tipografías, estilos y juegos; no requiere instalación. Los retos funcionan sin conexión; los dos videos y los enlaces oficiales requieren internet.
 
 ## Usar en el salón
 
@@ -40,9 +47,9 @@ Votos, resultados e ideas se guardan solamente en el navegador (`localStorage`).
 
 ## Información y fuentes
 
-La información institucional se consultó en fuentes oficiales del COLMAYOR el **27 de octubre de 2026**. En `program.js` se conservan los enlaces y la vigencia de cada dato. Los valores de PIN 2027-1, las tarifas 2026 y las convocatorias de apoyo se muestran diferenciados por periodo.
+La información institucional se consultó en fuentes oficiales del COLMAYOR el **27 de octubre de 2026**. La malla oficial del pénsum 1323 se volvió a comprobar el **28 de octubre de 2026**: 10 semestres y 165 créditos. Se conservan los nombres oficiales de las materias y sus créditos; el último semestre permite elegir práctica profesional o trabajo de grado. En `program.js` se conservan los enlaces y la vigencia de cada dato. Los valores de PIN 2027-1, las tarifas 2026 y las convocatorias de apoyo se muestran diferenciados por periodo.
 
-Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada, los seis personajes de cómic y los escenarios son ilustraciones generadas con IA de situaciones ficticias. Los personajes son ficticios y no representan a docentes ni egresados de la institución. Los diagramas, instrumentos y controles son originales. Las fuentes locales incluyen sus licencias en `assets/`. El video oficial requiere conexión a YouTube.
+Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**. No representan instalaciones reales, límites legales ni diagnósticos definitivos. La portada, los seis personajes de cómic y los escenarios son ilustraciones generadas con IA de situaciones ficticias. Los personajes son ficticios y no representan a docentes ni egresados de la institución. Los diagramas, instrumentos y controles son originales. Las fuentes locales incluyen sus licencias en `assets/`. Los dos videos seleccionados para esta experiencia requieren conexión a YouTube.
 
 ## Archivos
 
@@ -57,7 +64,8 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 - `worlds-extra.js` y `worlds-extra.css`: casos y minijuegos de aire y residuos.
 - `worlds-integration.js`: integra los seis mundos, las ilustraciones y las insignias.
 - `cases.js`: cuatro casos didácticos.
-- `program.js`: información institucional y fuentes.
+- `program.js`: información institucional, malla por semestre, videos y fuentes.
+- `program-garden.css`: imágenes orgánicas, recorrido de aprendizaje y malla del programa.
 - `assets/`: imágenes, fuentes y licencias.
 - `.nojekyll`: indica a GitHub Pages que publique los archivos estáticos directamente.
 

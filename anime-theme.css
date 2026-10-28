@@ -439,3 +439,10 @@ dialog::backdrop {background:#152840a8;backdrop-filter:blur(6px);}
   .adventure-copy h1 em{font-size:.72em;}
   .adventure-hero:after{background:linear-gradient(90deg,#f3fafcf0 0%,#eef8fce0 42%,#eef8fc88 55%,#eef8fc00 69%);}
 }
+
+/* Short explanations remain next to the numbers they describe. */
+.chart-help{font-size:15px;line-height:1.5;color:#526481;margin:8px 0 15px;}
+.arcade-optional{font-size:15px;line-height:1.5;color:#526481;margin:16px 0 0;padding:12px 15px;background:#f3f7fc;border-radius:10px;}
+.arcade-optional summary{cursor:pointer;font-weight:700;color:#29496d;}
+.arcade-optional p{margin:12px 0 0;font-size:15px;}
+@media(max-width:640px){.chart-help,.arcade-optional,.arcade-optional p{font-size:14px;}}

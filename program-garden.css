@@ -1,0 +1,102 @@
+/* Una ruta de aprendizaje con paisajes, hojas y caminos, antes de las materias. */
+.program-garden{--garden-green:#527d60;--garden-pale:#edf4e7;--garden-navy:#203357;}
+.program-garden .program-hero{overflow:hidden;gap:32px;}
+.program-hero-art{position:relative;margin:0;min-height:310px;border-radius:48% 48% 20px 20px;overflow:hidden;align-self:stretch;border:1px solid #ffffff66;}
+.program-hero-art>img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:91% center;}
+.program-hero-art figcaption{position:absolute;bottom:19px;left:17px;right:17px;padding:13px 15px;border-radius:11px;background:#203357e6;color:#fff;font-size:16px;font-weight:650;line-height:1.4;}
+.program-garden .program-section{margin-top:65px;}
+.program-garden .program-section>h2{font-size:clamp(30px,3.2vw,43px);line-height:1.16;max-width:950px;margin-bottom:16px;}
+.garden-intro{font-size:19px;line-height:1.6;max-width:820px;color:#526481;margin:0 0 30px;}
+.program-films{display:grid;grid-template-columns:1.2fr 1fr;gap:28px;align-items:stretch;}
+.program-film{display:flex;align-items:center;gap:23px;padding:23px;border:1px solid #c4d2d7;border-radius:23px;background:#fff;min-width:0;}
+.program-film-poster{display:block;position:relative;overflow:hidden;padding:0;flex:0 0 43%;aspect-ratio:4/3;border:0;border-radius:38% 38% 15px 15px;background:#b9d3c3;}
+.program-film-poster:hover,.program-film-poster:active:not(:disabled){transform:none!important;}
+.program-film-poster img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 15%;}
+.program-film-poster:after{content:'';position:absolute;inset:0;background:linear-gradient(transparent 50%,#2033578c);pointer-events:none;}
+.film-play{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);display:grid;place-items:center;width:58px;height:58px;padding-left:3px;border:1px solid #fff;border-radius:50%;background:#203357e8;color:#fff;font-size:23px;z-index:1;box-shadow:0 0 0 8px #ffffff33;}
+.film-format{position:absolute;bottom:12px;left:10px;right:10px;z-index:1;text-align:center;font-size:9px;letter-spacing:.08em;font-weight:750;color:white;}
+.program-film-copy{min-width:0;flex:1;}
+.program-film-copy h3{font-size:19px;line-height:1.35;margin:0 0 12px;}
+.program-film-copy p{font-size:16px;line-height:1.5;color:#526481;margin:0 0 11px;}
+.program-film-copy .text-btn{display:block;font-size:15px;text-align:left;min-height:42px;}
+.program-film-copy .source-link{display:inline-block;font-size:12px;margin-top:10px;}
+.film-portrait .program-film-poster{flex-basis:32%;aspect-ratio:9/14;border-radius:35% 35% 13px 13px;max-height:270px;}
+.program-video-dialog .modal-video{display:block;margin:20px auto;aspect-ratio:16/9;width:100%;height:auto;}
+.program-video-dialog .modal-video.video-portrait{aspect-ratio:9/16;width:min(100%,300px);max-height:62vh;}
+#modal-content .program-video-dialog h2{font-size:24px;line-height:1.35;}
+.footprint-section{position:relative;isolation:isolate;}
+.career-grove{position:relative;display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:30px;margin:45px 0 30px;}
+.career-grove:before{content:'';position:absolute;left:3%;right:3%;height:130px;top:155px;border-bottom:2px dashed #9eb795;border-radius:0 0 50% 50%;z-index:-1;}
+.career-leaf{min-width:0;}
+.career-leaf-art{position:relative;aspect-ratio:1;max-width:260px;margin:0 auto 25px;border-radius:42% 58% 62% 38% / 38% 42% 58% 62%;background:#b8d7c3;padding:6px;box-shadow:0 10px 0 #dce7d5;}
+.career-leaf-art:after{content:'';position:absolute;right:0;bottom:8%;width:23px;height:39px;transform:rotate(32deg);border-radius:95% 0 95% 0;background:#9ebc8e;border:3px solid #f2f9fc;}
+.career-leaf-art img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 25%;border-radius:inherit;}
+.career-leaf.leaf-1 .career-leaf-art{border-radius:60% 40% 40% 60% / 50% 60% 40% 50%;background:#c5bee6;box-shadow:0 10px 0 #e7e2f3;}
+.career-leaf.leaf-2 .career-leaf-art{border-radius:48% 52% 65% 35% / 38% 62% 38% 62%;background:#edc999;box-shadow:0 10px 0 #f2e6d0;}
+.career-leaf.leaf-3 .career-leaf-art{border-radius:58% 42% 40% 60% / 60% 55% 45% 40%;background:#9dced3;box-shadow:0 10px 0 #dfedf0;}
+.career-leaf.leaf-3 .career-leaf-art img{object-position:94% center;}
+.career-leaf:nth-child(even){padding-top:37px;}
+.leaf-action{display:block;font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:#527d60;font-weight:750;line-height:1.5;margin-bottom:9px;}
+.career-leaf h3{font-size:26px;line-height:1.2;letter-spacing:-.025em;margin:0 0 12px;}
+.career-leaf p{font-size:17px;line-height:1.6;color:#526481;margin:0;}
+.garden-connection{font-size:18px;font-weight:650;line-height:1.6;color:#527d60;padding:23px 0;border-top:1px solid #cfddcf;margin-top:30px;max-width:850px;}
+.learning-landscape{position:relative;padding:45px 36px 60px;background:linear-gradient(145deg,#edf4e7,#f6f8ef 57%,#e5f0ea);border-radius:65px 24px 80px 24px;overflow:hidden;isolation:isolate;}
+.learning-landscape:before{content:'';position:absolute;width:400px;height:350px;border-radius:30% 70% 40% 60%;background:#dce9d550;right:-160px;top:-130px;z-index:-1;transform:rotate(20deg);}
+.journey-route{position:relative;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:66px 45px;margin-top:40px;padding:0 0 40px;}
+.growth-trail{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:-1;overflow:visible;}
+.growth-trail path{fill:none;stroke:#8cae8330;stroke-width:6;stroke-dasharray:9 12;stroke-linecap:round;}
+.journey-step{display:flex;gap:22px;align-items:center;min-width:0;position:relative;}
+.journey-step:nth-of-type(even){transform:translateY(36px);}
+.journey-art{position:relative;flex:0 0 36%;aspect-ratio:1;border-radius:45% 55% 38% 62% / 57% 40% 60% 43%;border:5px solid #fff;box-shadow:0 7px 20px #527d601a;}
+.journey-art>img{width:100%;height:100%;object-fit:cover;display:block;border-radius:inherit;}
+.journey-art>span{position:absolute;bottom:-8px;right:0;display:grid;place-items:center;width:42px;height:42px;border-radius:50%;color:#fff;background:#527d60;border:3px solid #f1f6ed;font-weight:750;font-size:15px;}
+.journey-step:nth-of-type(even) .journey-art{border-radius:60% 40% 54% 46% / 40% 60% 40% 60%;}
+.journey-copy{min-width:0;flex:1;}
+.journey-level{font-size:10px;line-height:1.5;font-weight:750;letter-spacing:.06em;color:#527d60;}
+.journey-copy h3{font-size:24px;line-height:1.2;margin:9px 0 10px;letter-spacing:-.025em;}
+.journey-copy p{font-size:16px;line-height:1.55;color:#526481;margin:0 0 10px;}
+.journey-copy strong{font-size:13px;line-height:1.5;color:#527d60;}
+.semester-nav{display:grid;grid-template-columns:repeat(10,minmax(0,1fr));gap:8px;margin:28px 0 32px;padding:14px;background:#e7efe1;border-radius:16px;}
+.semester-nav button{padding:10px 3px;min-height:62px;border:1px solid #b8cbb0;border-radius:10px;background:#fff;color:#203357;font-size:22px;font-weight:750;line-height:1.25;}
+.semester-nav button span{display:block;font-size:9px;line-height:1.5;font-weight:600;}
+.semester-nav button:hover{background:#d8e7cf;transform:none;}
+.semester-garden{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;align-items:start;}
+.semester-branch{padding:25px 22px;background:#ffffffde;border:1px solid #cad6c8;border-left:4px solid #89a87a;border-radius:7px 26px 26px 7px;min-width:0;scroll-margin-top:25px;}
+.semester-branch:nth-child(3n+2){border-left-color:#aaa0d0;}.semester-branch:nth-child(3n){border-left-color:#d2ae7d;}
+.semester-heading{display:flex;align-items:center;gap:15px;margin-bottom:17px;}
+.semester-number{display:grid;place-items:center;flex:0 0 48px;width:48px;height:48px;border-radius:40% 60% 55% 45%;background:#e7efe0;font-size:20px;font-weight:750;color:#527d60;}
+.semester-heading h3{font-size:23px;line-height:1.2;margin:0 0 6px;}
+.semester-heading h3:focus{outline:2px solid #527d60;outline-offset:5px;border-radius:3px;}
+.semester-heading p{font-size:12px;font-weight:650;color:#526481;margin:0;}
+.course-list{list-style:none;margin:0;padding:0;}
+.course-list li{display:flex;align-items:start;justify-content:space-between;gap:12px;padding:11px 0;border-top:1px solid #e0e8dd;font-size:15px;line-height:1.45;}
+.course-list li>span{min-width:0;flex:1;overflow-wrap:anywhere;}
+.course-list small{flex:0 0 33px;text-align:right;white-space:nowrap;color:#527d60;font-size:11px;line-height:1.9;font-weight:750;}
+.course-list abbr{text-decoration:none;}
+.semester-choice{font-size:13px;line-height:1.6;padding-top:15px;margin:0;color:#527d60;font-weight:600;}
+.curriculum-source{display:flex;align-items:center;justify-content:space-between;gap:30px;margin-top:27px;padding:24px 0;border-top:1px solid #c7d7c5;}
+.curriculum-source p{font-size:14px;line-height:1.65;color:#526481;margin:0;max-width:790px;}
+.curriculum-source .primary{flex-shrink:0;font-size:14px;}
+@media(max-width:1100px){
+ .program-film{padding:19px;gap:17px;}.program-film-copy h3{font-size:17px;}.program-film-copy p{font-size:14px;}.film-play{width:47px;height:47px;font-size:19px;}.film-format{font-size:8px;}
+ .career-grove{gap:23px;}.career-leaf h3{font-size:23px;}.career-leaf p{font-size:16px;}.leaf-action{font-size:10px;}
+ .learning-landscape{padding:36px 27px 50px;}.journey-route{gap:55px 27px;}.journey-step{gap:15px;}.journey-copy h3{font-size:21px;}.journey-copy p{font-size:15px;}
+ .semester-garden{grid-template-columns:repeat(2,minmax(0,1fr));}.course-list li{font-size:16px;}
+}
+@media(max-width:900px){
+ .program-films{grid-template-columns:1fr;gap:20px;}.program-film{padding:23px;}.program-film-poster{flex-basis:35%;aspect-ratio:4/3;max-height:240px;}.film-portrait .program-film-poster{flex-basis:25%;max-height:240px;}.program-film-copy h3{font-size:22px;}.program-film-copy p{font-size:17px;}
+ .career-grove{grid-template-columns:repeat(2,minmax(0,1fr));gap:37px 36px;}.career-grove:before{display:none;}.career-leaf-art{max-width:235px;}.career-leaf h3{font-size:27px;}.career-leaf p{font-size:18px;}.leaf-action{font-size:11px;}.career-leaf:nth-child(even){padding-top:34px;}
+ .journey-route{grid-template-columns:1fr;gap:35px;padding:0;}.journey-step:nth-of-type(even){transform:none;}.journey-art{flex-basis:30%;max-width:190px;}.journey-step{gap:27px;}.journey-copy h3{font-size:26px;}.journey-copy p{font-size:18px;}.journey-copy strong{font-size:14px;}.growth-trail{left:8%;width:25%;height:95%;}.growth-trail path{stroke-width:9;stroke-dasharray:8 12;}
+ .semester-nav{grid-template-columns:repeat(5,minmax(0,1fr));gap:10px;}.curriculum-source{align-items:flex-start;flex-direction:column;gap:18px;}
+}
+@media(max-width:640px){
+ .program-garden .program-section{margin-top:45px;}.program-garden .program-section>h2{font-size:30px;line-height:1.2;}.garden-intro{font-size:17px;line-height:1.6;margin-bottom:23px;}
+ .program-garden .program-hero{padding:27px 23px;gap:29px;}.program-hero-art{min-height:280px;border-radius:45% 45% 17px 17px;}.program-hero-art figcaption{font-size:14px;left:13px;right:13px;bottom:13px;padding:11px;}
+ .program-film{gap:17px;padding:17px;border-radius:19px;align-items:center;}.program-film-poster{flex-basis:34%;aspect-ratio:4/5;}.film-portrait .program-film-poster{flex-basis:34%;aspect-ratio:9/16;}.program-film-copy h3{font-size:16px;line-height:1.4;margin-bottom:10px;}.program-film-copy p{font-size:14px;line-height:1.5;}.program-film-copy .text-btn{font-size:14px;}.program-film-copy .source-link{font-size:11px;line-height:1.5;}.film-format{display:none;}.film-play{width:43px;height:43px;font-size:17px;box-shadow:0 0 0 5px #ffffff33;}
+ .career-grove{grid-template-columns:1fr;gap:36px;margin:30px 0;}.career-leaf{display:flex;align-items:center;gap:19px;}.career-leaf:nth-child(even){padding-top:0;flex-direction:row-reverse;}.career-leaf-art{flex:0 0 43%;margin:0;max-width:none;}.career-leaf-copy{min-width:0;flex:1;}.career-leaf h3{font-size:22px;line-height:1.2;margin-bottom:10px;}.career-leaf p{font-size:15px;line-height:1.6;}.leaf-action{font-size:9px;line-height:1.5;margin-bottom:7px;}.garden-connection{font-size:16px;padding-top:20px;}
+ .learning-landscape{padding:30px 20px 35px;border-radius:40px 17px 45px 17px;}.journey-route{gap:36px;margin-top:27px;}.journey-step{gap:17px;align-items:flex-start;}.journey-art{flex-basis:33%;margin-top:6px;}.journey-art>span{width:34px;height:34px;font-size:12px;right:-5px;bottom:-8px;border-width:2px;}.journey-copy h3{font-size:21px;line-height:1.25;margin:7px 0 9px;}.journey-copy p{font-size:15px;line-height:1.55;margin-bottom:8px;}.journey-copy strong{font-size:12px;line-height:1.5;}.journey-level{font-size:9px;}.growth-trail{width:20%;left:7%;}
+ .semester-nav{padding:11px;gap:7px;}.semester-nav button{font-size:20px;padding:8px 3px;min-height:59px;}.semester-nav button span{font-size:8px;}.semester-garden{grid-template-columns:1fr;gap:21px;}.semester-branch{padding:24px 21px;}.semester-heading h3{font-size:25px;}.course-list li{font-size:16px;padding:12px 0;}.course-list small{font-size:12px;}.curriculum-source p{font-size:14px;}.curriculum-source .primary{max-width:100%;white-space:normal;}
+}
+@media(max-width:380px){.career-leaf{gap:15px;}.career-leaf-art{flex-basis:39%;}.career-leaf h3{font-size:20px;}.career-leaf p{font-size:14px;}.program-film-copy h3{font-size:15px;}.program-film-copy p{font-size:13px;}.journey-step{gap:13px;}.journey-copy h3{font-size:20px;}.journey-copy p{font-size:14px;}}
+@media(prefers-reduced-motion:reduce){.semester-nav button,.program-film-poster{transition:none!important;}}
+@media print{.semester-nav,.program-film-poster,.growth-trail{display:none;}.career-grove{grid-template-columns:repeat(2,1fr);}.career-leaf{break-inside:avoid;}.learning-landscape{background:#fff;}.journey-step{break-inside:avoid;}.semester-garden{grid-template-columns:repeat(2,1fr);}.semester-branch{break-inside:avoid;}}

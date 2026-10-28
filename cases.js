@@ -1,55 +1,55 @@
-/* Casos y datos sintéticos para una experiencia didáctica.
-   No representan instalaciones reales, límites legales ni diagnósticos definitivos. */
+/* Casos y datos inventados para aprender jugando.
+   No representan lugares reales, límites legales ni resultados de una investigación real. */
 window.CASES = [
   {
     id: 'agua',
     title: 'La quebrada pide aire',
     category: 'Industria + agua',
     duration: '5 min',
-    teaser: 'Una descarga, peces en la superficie y una decisión que puede cambiar el agua.',
-    setting: 'Una planta de alimentos está junto a una quebrada del Valle de Aburrá. Aguas abajo, algunos peces buscan aire en la superficie. Caso ficticio.',
-    profession: 'Diseñar monitoreos, interpretar resultados y mejorar el tratamiento de aguas residuales.',
-    reflection: '¿Qué medirías después para saber si la quebrada se está recuperando?',
-    course: 'Agua, química ambiental y tratamiento de vertimientos',
+    teaser: 'Sale agua de una fábrica y los peces suben a la superficie. ¿Qué está pasando?',
+    setting: 'Una fábrica de alimentos está junto a una quebrada del Valle de Aburrá. Después de la tubería, algunos peces suben a la superficie. Tu equipo busca la causa. Caso inventado.',
+    profession: 'Tomar muestras de agua, entender los resultados y ayudar a una fábrica a contaminar menos.',
+    reflection: '¿Qué volverías a medir para saber si la quebrada mejora?',
+    course: 'Cuidado del agua y tratamiento del agua usada',
     palette: ['#137e9b', '#b2e7d7'],
     hotspots: [
-      {label: '01', title: 'Antes de la descarga', text: 'El punto aguas arriba sirve para comparar. El aspecto transparente no garantiza buena calidad.', x: 78, y: 39},
-      {label: '02', title: 'El vertimiento', text: 'Sale de una planta de alimentos y tiene aspecto lechoso. Es una pista; todavía no es un diagnóstico.', x: 50, y: 49},
-      {label: '03', title: 'Aguas abajo', text: 'Hay peces en la superficie. Investiga oxígeno, temperatura y otros posibles aportes a la quebrada.', x: 21, y: 74}
+      {label: '01', title: 'Antes de la tubería', text: 'Este punto sirve para comparar. Aunque el agua se vea transparente, hay que medirla.', x: 78, y: 39},
+      {label: '02', title: 'La salida de la fábrica', text: 'El agua que sale parece lechosa. Su color da una pista, pero no explica por sí solo qué pasa.', x: 50, y: 49},
+      {label: '03', title: 'Después de la tubería', text: 'Algunos peces suben a la superficie. Revisa cuánto oxígeno tiene el agua y si llegan otras aguas a la quebrada.', x: 21, y: 74}
     ],
     stages: [
       {
-        title: 'Plantea una hipótesis',
-        prompt: '¿Qué investigas primero?',
-        context: 'El aspecto lechoso y los peces en la superficie orientan la investigación, pero no confirman una causa.',
+        title: 'Propón una explicación',
+        prompt: '¿Qué investigarías primero?',
+        context: 'Ya viste agua lechosa y peces en la superficie. Ahora propone una idea que puedas comprobar.',
         options: [
-          {title: 'Solo el agua caliente', text: 'La temperatura explica toda la situación.', feedback: 'La temperatura influye en el oxígeno, pero debes medirla y comparar otras causas. Una sola pista no basta.', score: 1},
-          {title: 'Carga orgánica y oxígeno', text: 'La materia orgánica podría estar consumiendo oxígeno.', feedback: 'Es una hipótesis razonable: los microorganismos consumen oxígeno al degradar materia orgánica. Ahora hay que comprobarla.', score: 2},
-          {title: 'Retirar la espuma', text: 'Eliminar lo visible resolverá el problema.', feedback: 'La espuma es una señal. Retirarla no identifica ni elimina necesariamente lo que afecta a los peces.', score: 0}
+          {title: 'Solo la temperatura', text: 'Pensar que el agua caliente explica todo.', feedback: 'El calor puede afectar el oxígeno del agua. Conviene medirlo, pero también revisar otras posibles causas.', score: 1},
+          {title: 'Restos de comida y poco oxígeno', text: 'Revisar si los restos de la fábrica hacen que baje el oxígeno.', feedback: 'Buena idea para comprobar. Al descomponer restos de comida, las bacterias usan oxígeno que también necesitan los peces.', score: 2},
+          {title: 'Quitar lo que flota', text: 'Retirar la espuma y dar el problema por resuelto.', feedback: 'Quitar la espuma cambia lo que vemos, pero puede dejar en el agua lo que afecta a los peces.', score: 0}
         ],
         correct: 1,
         chart: null
       },
       {
-        title: 'Elige cómo medir',
-        prompt: '¿Qué kit comprueba mejor tu hipótesis?',
-        context: 'Compara antes, en la descarga y después. El oxígeno se mide en campo; la DBO₅ requiere cinco días. En esta simulación adelantamos ese tiempo.',
+        title: 'Elige tus herramientas',
+        prompt: '¿Qué equipo te ayuda a comprobar tu idea?',
+        context: 'Mide antes, en la tubería y después. El medidor revisa el oxígeno en el lugar. Otra prueba, llamada DBO₅, tarda cinco días en el laboratorio y ayuda a saber cuánto oxígeno usan los restos del agua. En el juego adelantamos esa espera.',
         options: [
-          {title: 'Oxígeno + caudal + laboratorio', text: 'Oxímetro, termómetro, caudal y muestras para DBO₅.', feedback: 'Combinas condiciones del agua y carga orgánica. Resultado simulado: DBO₅ de 3 mg/L antes, 420 mg/L en la descarga y 28 mg/L después. Apoya la hipótesis, sin descartar otros aportes.', score: 2},
-          {title: 'Cámara y encuesta', text: 'Fotografiar el color y preguntar si huele mal.', feedback: 'Documentan señales y experiencias, pero no cuantifican oxígeno ni materia orgánica.', score: 0},
-          {title: 'Solo pH', text: 'Medir la acidez en la tubería.', feedback: 'El pH es importante, pero no basta para comprobar un consumo de oxígeno. Necesitas otros parámetros y puntos de comparación.', score: 1}
+          {title: 'Medir oxígeno y tomar muestras', text: 'Revisar también la temperatura y cuánta agua sale de la tubería.', feedback: 'Ahora puedes comparar: después de la tubería hay menos oxígeno. La prueba de laboratorio también indica que el agua que sale de la fábrica necesita más oxígeno para descomponer sus restos. Tu idea tiene apoyo; revisa si llegan otras aguas.', score: 2},
+          {title: 'Fotos y preguntas', text: 'Tomar fotos del color y preguntar por el olor.', feedback: 'Las fotos y lo que cuenta la gente dan pistas útiles. Pero no indican cuánto oxígeno tiene el agua.', score: 0},
+          {title: 'Solo medir la acidez', text: 'Usar una prueba de pH en la tubería.', feedback: 'El pH indica qué tan ácida es el agua. Es útil, pero no dice cuánto oxígeno hay ni si los restos de comida lo están reduciendo.', score: 1}
         ],
         correct: 0,
-        chart: {title: 'Oxígeno disuelto · datos simulados', unit: 'mg/L', max: 8, rows: [{label: 'Aguas arriba', value: 7.2}, {label: 'Aguas abajo', value: 3.1}]}
+        chart: {title: 'Oxígeno en el agua · ejemplo', unit: 'mg/L', max: 8, rows: [{label: 'Antes de la tubería', value: 7.2}, {label: 'Después de la tubería', value: 3.1}]}
       },
       {
-        title: 'Actúa sobre la causa',
-        prompt: '¿Qué plan probarías y verificarías?',
-        context: 'La evidencia apoya un aporte de materia orgánica asociado a menor oxígeno. Elige una respuesta que reduzca la carga y permita comprobar resultados.',
+        title: 'Prueba una solución',
+        prompt: '¿Qué plan probarías para mejorar el agua?',
+        context: 'Los resultados apoyan la idea de que llegan restos de comida y baja el oxígeno. Elige un plan que reduzca el problema desde la fábrica.',
         options: [
-          {title: 'Diluir la descarga', text: 'Agregar agua limpia antes de verter.', feedback: 'Diluir reduce la concentración, pero no elimina la masa contaminante y consume agua adicional.', score: 0},
-          {title: 'Airear la quebrada', text: 'Instalar únicamente una fuente de aireación.', feedback: 'Puede ayudar temporalmente al oxígeno; la carga orgánica seguiría llegando. Falta actuar en la fuente.', score: 1},
-          {title: 'Prevenir + tratar + comprobar', text: 'Reducir pérdidas, tratar el vertimiento y repetir el monitoreo.', feedback: 'Actúas sobre la fuente y verificas la mejora. El tratamiento también exige operación, energía y manejo de los residuos que produce.', score: 2}
+          {title: 'Agregar agua limpia', text: 'Mezclarla con el agua sucia antes de que salga.', feedback: 'La mezcla queda menos concentrada, pero los restos siguen allí. Además, gastas más agua limpia.', score: 0},
+          {title: 'Poner aire en la quebrada', text: 'Añadir oxígeno sin cambiar lo que sale de la fábrica.', feedback: 'Puede ayudar por un tiempo. Pero, si siguen llegando restos, también seguirá llegando el problema.', score: 1},
+          {title: 'Evitar, limpiar y volver a medir', text: 'Perder menos comida, tratar el agua usada y revisar si mejora.', feedback: 'Actúas donde empieza el problema y compruebas el resultado. El sistema para limpiar el agua también necesita cuidado, energía y manejo de los residuos que deja.', score: 2}
         ],
         correct: 2,
         chart: null
@@ -59,52 +59,52 @@ window.CASES = [
   {
     id: 'bosque',
     title: 'Conecta la vida',
-    category: 'Ecosistemas + territorio',
+    category: 'Bosques + animales',
     duration: '5 min',
-    teaser: 'Tres parches de bosque. Una ruta por recuperar. ¿Dónde empieza la conexión?',
-    setting: 'En un paisaje rural de Antioquia, potreros y una vía separan parches de bosque. La comunidad reporta menos avistamientos de fauna. Caso ficticio.',
-    profession: 'Evaluar ecosistemas, trabajar con comunidades y proponer restauración con seguimiento.',
-    reflection: 'Además de contar árboles sembrados, ¿cómo comprobarías que la conexión funciona?',
-    course: 'Ecología, biodiversidad y gestión del territorio',
+    teaser: 'Tres zonas de bosque y una carretera. Ayuda a los animales a volver a conectarse.',
+    setting: 'En una zona rural de Antioquia, una carretera y varios potreros separan los bosques. La comunidad cuenta que ahora ve menos animales. Tu equipo busca qué puede estar pasando. Caso inventado.',
+    profession: 'Estudiar los bosques con la comunidad y recuperar caminos que los animales puedan usar.',
+    reflection: 'Además de contar los árboles sembrados, ¿cómo sabrías si los animales usan el nuevo camino?',
+    course: 'Bosques, animales y cuidado del territorio',
     palette: ['#326d4d', '#d6e6ab'],
     hotspots: [
-      {label: '01', title: 'Bosque mayor', text: 'Es el parche de mayor extensión. Puede albergar hábitats distintos a los parches pequeños.', x: 15, y: 28},
-      {label: '02', title: 'Parche conectado', text: 'Una franja de vegetación conserva una conexión. Hay que comprobar qué especies la utilizan.', x: 77, y: 19},
-      {label: '03', title: 'Parche aislado', text: 'Zonas abiertas separan este parche. La distancia y el tipo de cobertura pueden afectar el movimiento de la fauna.', x: 55, y: 74}
+      {label: '01', title: 'El bosque grande', text: 'Tiene más espacio y puede ofrecer refugios distintos a los de los bosques pequeños.', x: 15, y: 28},
+      {label: '02', title: 'Un bosque con camino', text: 'Una franja de plantas lo une con el bosque grande. Hay que revisar qué animales la usan.', x: 77, y: 19},
+      {label: '03', title: 'Un bosque separado', text: 'Lo rodean zonas abiertas. A algunos animales les puede resultar difícil cruzarlas.', x: 55, y: 74}
     ],
     stages: [
       {
-        title: 'Lee el paisaje',
-        prompt: '¿Qué problema sugiere primero el mapa?',
-        context: 'Un parche está conectado con el bosque mayor y otro está separado por áreas abiertas.',
+        title: 'Observa el mapa',
+        prompt: '¿Qué problema te sugiere el mapa?',
+        context: 'Un bosque pequeño tiene un camino de plantas hacia el bosque grande. El otro está separado por zonas abiertas.',
         options: [
-          {title: 'Fragmentación del hábitat', text: 'El aislamiento podría dificultar el movimiento de algunas especies.', feedback: 'La distribución del paisaje respalda esta hipótesis. Falta conocer qué especies usan cada lugar y cómo se mueven.', score: 2},
-          {title: 'Contaminación química', text: 'El suelo podría tener sustancias tóxicas.', feedback: 'Es una posibilidad que exige otras evidencias. El mapa no muestra sustancias ni resultados de laboratorio.', score: 1},
-          {title: 'Todos los suelos son infértiles', text: 'La separación demuestra pérdida de fertilidad.', feedback: 'No puedes deducir la fertilidad del suelo a partir de la distancia entre los bosques.', score: 0}
+          {title: 'Bosques separados', text: 'Algunos animales podrían tener dificultades para pasar de uno a otro.', feedback: 'El mapa da esa pista. Ahora falta saber qué animales viven allí y por dónde se mueven.', score: 2},
+          {title: 'Sustancias dañinas en el suelo', text: 'Pensar que el suelo puede estar contaminado.', feedback: 'Podría ocurrir, pero el mapa no lo muestra. Necesitarías otras pistas y pruebas para investigarlo.', score: 1},
+          {title: 'El suelo ya no sirve para las plantas', text: 'Afirmarlo solo porque los bosques están separados.', feedback: 'La distancia entre los bosques no te dice si el suelo ayuda o no a crecer a las plantas.', score: 0}
         ],
         correct: 0,
         chart: null
       },
       {
-        title: 'Busca evidencia comparable',
-        prompt: '¿Cómo compararías los tres parches?',
-        context: 'Compara con criterios y esfuerzo de observación semejantes. La experiencia de la comunidad también aporta al diagnóstico.',
+        title: 'Compara de la misma manera',
+        prompt: '¿Cómo investigarías los tres bosques?',
+        context: 'Observa los tres lugares durante el mismo tiempo y de la misma manera. Escucha también lo que sabe la comunidad.',
         options: [
-          {title: 'Una foto desde el aire', text: 'Tomar una imagen del paisaje hoy.', feedback: 'Ayuda a describir cobertura y distancias, pero no registra por sí sola el uso del lugar por la fauna.', score: 1},
-          {title: 'Visitar solo el parche cercano', text: 'Contar allí y extrapolar a los otros.', feedback: 'Cada parche puede ser diferente. Para compararlos debes observar también los otros con un esfuerzo semejante.', score: 0},
-          {title: 'Cámaras + recorridos + mapa', text: 'Mismo esfuerzo por sitio y observaciones repetidas.', feedback: 'Combinas ubicación y seguimiento. Los datos de 30 noches-cámara por sitio son compatibles con un efecto del aislamiento; un periodo no demuestra su causa ni registra toda la biodiversidad.', score: 2}
+          {title: 'Una foto desde el aire', text: 'Mirar cómo se ve el paisaje hoy.', feedback: 'La foto muestra las plantas y las distancias. Pero, por sí sola, no te dice qué animales pasan por allí.', score: 1},
+          {title: 'Visitar solo el bosque más cercano', text: 'Suponer que los otros tienen los mismos animales.', feedback: 'Cada bosque puede ser distinto. Para compararlos, necesitas observar los tres durante el mismo tiempo.', score: 0},
+          {title: 'Cámaras, caminatas y un mapa', text: 'Repetir las observaciones en los tres lugares.', feedback: 'Así reúnes pistas que puedes comparar. En este ejemplo usamos una cámara durante 30 noches en cada lugar. El bosque separado registra menos tipos de animales, pero una sola temporada no explica toda la historia.', score: 2}
         ],
         correct: 2,
-        chart: {title: 'Especies nativas registradas · simulación', unit: 'especies', max: 10, rows: [{label: 'Bosque mayor', value: 8}, {label: 'Conectado', value: 7}, {label: 'Aislado', value: 3}]}
+        chart: {title: 'Tipos de animales de la zona registrados · ejemplo', unit: 'especies', max: 10, rows: [{label: 'Bosque grande', value: 8}, {label: 'Con camino', value: 7}, {label: 'Separado', value: 3}]}
       },
       {
-        title: 'Diseña una conexión',
-        prompt: '¿Qué propuesta construirías con la comunidad?',
-        context: 'El plan debe considerar especies, uso del suelo, acuerdos con propietarios y mantenimiento.',
+        title: 'Recupera un camino',
+        prompt: '¿Qué plan harías con la comunidad?',
+        context: 'Piensa en los animales, en las plantas de la zona y en las personas que usan esos terrenos.',
         options: [
-          {title: 'Sembrar cualquier árbol', text: 'Elegir solamente el que crezca más rápido.', feedback: 'Más árboles pueden ayudar, pero las especies y la estructura de la vegetación deben ser adecuadas para el ecosistema.', score: 1},
-          {title: 'Restaurar y hacer seguimiento', text: 'Acordar una conexión con vegetación nativa y evaluar su uso.', feedback: 'Conectas restauración, acuerdos y monitoreo. Los beneficios toman tiempo y la vegetación necesita mantenimiento.', score: 2},
-          {title: 'Trasladar toda la fauna', text: 'Capturar los animales y llevarlos al bosque mayor.', feedback: 'Mover animales no recupera el hábitat y puede crear otros riesgos. Un rescate requiere criterios y personal especializado.', score: 0}
+          {title: 'Sembrar cualquier árbol', text: 'Elegir solo los que crezcan más rápido.', feedback: 'Sembrar puede ayudar, pero no todos los árboles ofrecen el alimento y el refugio que necesitan los animales de ese bosque.', score: 1},
+          {title: 'Unir los bosques y revisar si funciona', text: 'Acordar un camino con plantas de la zona y observar si los animales lo usan.', feedback: 'Combinas un camino de plantas, acuerdos con las personas y nuevas observaciones. Las plantas necesitan cuidado y los cambios toman tiempo.', score: 2},
+          {title: 'Llevar todos los animales al bosque grande', text: 'Capturarlos para cambiarles de lugar.', feedback: 'Moverlos no recupera su hogar y puede causar otros problemas. Si hace falta rescatar un animal, debe hacerlo personal preparado.', score: 0}
         ],
         correct: 1,
         chart: null
@@ -114,52 +114,52 @@ window.CASES = [
   {
     id: 'obra',
     title: 'La lluvia pone a prueba',
-    category: 'Infraestructura + prevención',
+    category: 'Construcción + cuidado del agua',
     duration: '5 min',
-    teaser: 'Una obra vial y una tormenta. Evita que el suelo termine en la quebrada.',
-    setting: 'Una obra vial avanza cerca de una quebrada. Después de una lluvia, el agua cambia de color. Tu equipo debe investigar y prevenir nuevos impactos. Caso ficticio.',
-    profession: 'Anticipar impactos de proyectos, diseñar medidas de manejo y comprobar su eficacia.',
-    reflection: '¿Qué revisarías después de la próxima lluvia para ajustar el plan?',
-    course: 'Evaluación de impactos, suelo y manejo ambiental de proyectos',
+    teaser: 'Una carretera en construcción y una tormenta. Evita que la tierra llegue a la quebrada.',
+    setting: 'Están construyendo una carretera cerca de una quebrada. Después de llover, el agua se vuelve café. Tu equipo debe buscar la causa y evitar que vuelva a pasar. Caso inventado.',
+    profession: 'Planear cómo cuidar el agua y el suelo mientras se construye una obra, y revisar si el plan funciona.',
+    reflection: '¿Qué revisarías después de la próxima lluvia para mejorar tu plan?',
+    course: 'Cuidado del agua y del suelo en las obras',
     palette: ['#aa6842', '#eed4a8'],
     hotspots: [
-      {label: '01', title: 'Talud descubierto', text: 'La lluvia puede desprender suelo sin protección. Revisa también acopios y superficies recién intervenidas.', x: 39, y: 49},
-      {label: '02', title: 'Drenaje de la obra', text: 'Una ruta de escorrentía conecta el suelo expuesto con la quebrada. Sigue el camino del agua.', x: 46, y: 64},
-      {label: '03', title: 'Quebrada', text: 'El color cambió después de llover. Compara aguas arriba y abajo; puede haber otras entradas de sedimentos.', x: 78, y: 75}
+      {label: '01', title: 'Tierra sin cubrir', text: 'La lluvia puede llevarse la tierra que quedó sin plantas ni protección. Revisa también los montones de tierra de la obra.', x: 39, y: 49},
+      {label: '02', title: 'El camino del agua', text: 'El agua de lluvia baja por la tierra descubierta y llega hasta la quebrada. Sigue ese recorrido.', x: 46, y: 64},
+      {label: '03', title: 'La quebrada', text: 'El agua cambió de color después de llover. Compara antes y después de la obra; puede llegar tierra desde otros lugares.', x: 78, y: 75}
     ],
     stages: [
       {
-        title: 'Sigue el camino del agua',
-        prompt: '¿Qué ruta del problema investigarías primero?',
-        context: 'Hay suelo descubierto y un drenaje conduce escorrentía hacia la quebrada.',
+        title: 'Sigue el agua',
+        prompt: '¿Qué podría estar volviendo café el agua?',
+        context: 'Hay tierra descubierta. La lluvia pasa por ella y sigue un camino hacia la quebrada.',
         options: [
-          {title: 'Sales disueltas', text: 'La lluvia estaría incorporando sales al agua.', feedback: 'Necesitarías mediciones específicas para investigarlo. El suelo expuesto y la escorrentía orientan primero hacia material suspendido.', score: 1},
-          {title: 'Residuos de alimentos', text: 'Una carga de alimentos está consumiendo oxígeno.', feedback: 'No hay una fuente de ese tipo identificada en la escena. Busca una hipótesis apoyada por las pistas disponibles.', score: 0},
-          {title: 'Arrastre de sedimentos', text: 'La lluvia podría movilizar el suelo de la obra.', feedback: 'Conectaste una fuente posible, una ruta de transporte y un receptor. Ahora hay que medir y revisar otros aportes.', score: 2}
+          {title: 'Sales en el agua', text: 'Pensar que la lluvia está agregando sales.', feedback: 'Para saberlo necesitarías otras pruebas. Las pistas que ves señalan primero la tierra que arrastra el agua.', score: 1},
+          {title: 'Restos de comida', text: 'Pensar que llega comida y baja el oxígeno.', feedback: 'No ves una salida de restos de comida en este lugar. Busca una explicación que coincida con las pistas de la obra.', score: 0},
+          {title: 'Tierra que arrastra la lluvia', text: 'Revisar si la lluvia lleva tierra de la obra hasta la quebrada.', feedback: 'Conectaste la tierra descubierta con el camino del agua y la quebrada. Ahora toca medir y revisar si llega tierra desde otros sitios.', score: 2}
         ],
         correct: 2,
         chart: null
       },
       {
-        title: 'Compara el evento',
-        prompt: '¿Qué medirías antes y después de llover?',
-        context: 'Antes de llover: turbidez de 15 NTU arriba y 18 NTU abajo. Después: 22 y 210 NTU. Son datos simulados de un evento.',
+        title: 'Compara antes y después',
+        prompt: '¿Qué revisarías antes y después de llover?',
+        context: 'Un medidor muestra qué tan turbia está el agua: cuanto más alto el número, más turbia. Su escala se llama NTU. Antes de llover marca 15 antes de la obra y 18 después. Tras la lluvia marca 22 y 210. Son datos inventados.',
         options: [
-          {title: 'Una foto aguas abajo', text: 'Usar solo el cambio de color como prueba.', feedback: 'La foto documenta lo observado, pero no cuantifica el cambio ni permite comparar sitios.', score: 0},
-          {title: 'Turbidez + sólidos + lluvia', text: 'Comparar aguas arriba y abajo y registrar la lluvia.', feedback: 'Combinas comparación espacial y temporal. Turbidez y sólidos suspendidos no son la misma medición. El aumento es compatible con arrastre; un evento no atribuye toda la diferencia a la obra.', score: 2},
-          {title: 'Solo temperatura', text: 'Medir si la quebrada se enfrió.', feedback: 'Caracteriza una condición del agua, pero no cuantifica los sedimentos. Necesitas parámetros relacionados con tu hipótesis.', score: 1}
+          {title: 'Una foto después de la obra', text: 'Usar solo el color del agua como prueba.', feedback: 'La foto guarda una pista útil. Pero no mide cuánto cambió el agua ni permite comparar bien los lugares.', score: 0},
+          {title: 'Medir el agua y anotar la lluvia', text: 'Comparar qué tan turbia está y cuánta tierra lleva, antes y después de la obra.', feedback: 'Comparas los lugares y lo que cambió con la lluvia. Medir qué tan turbia se ve el agua y pesar la tierra que lleva son pruebas distintas. Los resultados dan una pista; una sola lluvia no demuestra que toda la tierra venga de la obra.', score: 2},
+          {title: 'Solo revisar si se enfrió', text: 'Medir la temperatura de la quebrada.', feedback: 'La temperatura dice algo del agua, pero no cuánta tierra lleva. Te hacen falta pruebas relacionadas con lo que quieres investigar.', score: 1}
         ],
         correct: 1,
-        chart: {title: 'Turbidez después de llover · simulación', unit: 'NTU', max: 250, rows: [{label: 'Aguas arriba', value: 22}, {label: 'Aguas abajo', value: 210}]}
+        chart: {title: 'Qué tan turbia está el agua tras la lluvia · ejemplo', unit: 'NTU', max: 250, rows: [{label: 'Antes de la obra', value: 22}, {label: 'Después de la obra', value: 210}]}
       },
       {
-        title: 'Prevén el siguiente evento',
-        prompt: '¿Qué intervención aborda fuente y transporte?',
-        context: 'Elige medidas que funcionen juntas y puedan inspeccionarse después de la lluvia.',
+        title: 'Prepárate para otra lluvia',
+        prompt: '¿Qué plan evitaría que la tierra llegue al agua?',
+        context: 'Elige acciones que se ayuden entre sí y que puedas revisar después de llover.',
         options: [
-          {title: 'Proteger + conducir + retener', text: 'Cubrir suelo y acopios, manejar drenajes y retener sedimentos.', feedback: 'Actúas antes de que el material llegue a la quebrada. Las estructuras requieren diseño, limpieza, inspección y ajustes después de la lluvia.', score: 2},
-          {title: 'Limpiar al final de la obra', text: 'Esperar a terminar para retirar el material.', feedback: 'Esperar permite que el impacto continúe. Prevenir el arrastre suele ser más eficaz que intentar retirarlo después.', score: 0},
-          {title: 'Una barrera junto al agua', text: 'Colocarla sin revisar el drenaje.', feedback: 'Una medida aislada puede desbordarse o fallar. Revisa cómo llega el agua y combina controles apropiados para el sitio.', score: 1}
+          {title: 'Cubrir, guiar el agua y recoger la tierra', text: 'Proteger el suelo, preparar canales y atrapar la tierra antes de la quebrada.', feedback: 'Actúas antes de que la tierra llegue al agua. Los canales y las zonas que la recogen necesitan un buen diseño, limpieza y revisión después de la lluvia.', score: 2},
+          {title: 'Limpiar cuando termine la obra', text: 'Dejar la tierra allí hasta que todo esté construido.', feedback: 'Si esperas, la lluvia puede seguir llevando tierra a la quebrada. Conviene evitarlo desde ahora.', score: 0},
+          {title: 'Poner solo una barrera junto al agua', text: 'Instalarla sin mirar por dónde baja la lluvia.', feedback: 'Una barrera sola puede llenarse o desbordarse. Primero sigue el camino del agua y combina las acciones que necesita el lugar.', score: 1}
         ],
         correct: 0,
         chart: null
@@ -169,52 +169,52 @@ window.CASES = [
   {
     id: 'circular',
     title: 'Seis fichas para cambiar',
-    category: 'Industria + sostenibilidad',
+    category: 'Industria + ahorro de recursos',
     duration: '5 min',
-    teaser: 'Agua, energía y una inversión limitada. Tu equipo decide qué mejorar primero.',
-    setting: 'Una pequeña industria de alimentos quiere producir con menos agua y energía. Hay seis fichas para invertir y resultados que comprobar. Caso ficticio.',
-    profession: 'Medir desempeño, prevenir pérdidas y evaluar mejoras técnicas con recursos limitados.',
-    reflection: 'Si la prioridad fueran los residuos, ¿cambiarías tu inversión? ¿Por qué?',
-    course: 'Producción sostenible, gestión ambiental y evaluación de proyectos',
+    teaser: 'Tienes seis fichas. Elige cómo producir alimentos usando menos agua y energía.',
+    setting: 'Una fábrica de alimentos quiere usar menos agua y energía. Tienes seis fichas para elegir mejoras y después comprobar si funcionan. Caso inventado.',
+    profession: 'Buscar dónde se desperdician recursos y ayudar a una fábrica a producir con menos agua, energía y residuos.',
+    reflection: 'Si el objetivo fuera generar menos basura, ¿elegirías las mismas mejoras? ¿Por qué?',
+    course: 'Producción con menos agua, energía y residuos',
     palette: ['#98763b', '#e9db96'],
     hotspots: [
-      {label: '01', title: 'Agua de proceso', text: 'Referencia: 10 m³ por cada 1.000 unidades. Un reúso necesita validar calidad, inocuidad y compatibilidad.', x: 8, y: 64},
-      {label: '02', title: 'Energía', text: 'Referencia: 400 kWh por cada 1.000 unidades. Recuperar calor puede reducir la energía que requiere el proceso.', x: 85, y: 51},
-      {label: '03', title: 'Producción', text: 'Compara consumos por una producción equivalente. Una factura menor no siempre significa mayor eficiencia.', x: 47, y: 51}
+      {label: '01', title: 'Agua de la fábrica', text: 'Se usan 10 m³, es decir, 10.000 litros, por cada 1.000 productos. Antes de usar de nuevo parte del agua, hay que comprobar que sea segura para esa tarea.', x: 8, y: 64},
+      {label: '02', title: 'Energía', text: 'Se usan 400 kWh por cada 1.000 productos. El kWh es la unidad de energía de la factura. Aprovechar el calor que sale de una máquina puede ayudar a calentar otro proceso.', x: 85, y: 51},
+      {label: '03', title: 'Productos terminados', text: 'No basta con mirar cuánto gastó la fábrica. Compara cuánta agua y energía necesita para hacer la misma cantidad de productos.', x: 47, y: 51}
     ],
     stages: [
       {
-        title: 'Lee más allá de la factura',
-        prompt: 'Bajó el consumo total. ¿Mejoró la eficiencia?',
-        context: 'Día A: 1.000 unidades con 10 m³. Día B: 500 unidades con 7 m³. Recuerda: 1 m³ equivale a 1.000 litros.',
+        title: 'Mira el gasto por producto',
+        prompt: 'Usó menos agua en total. ¿Ahorró por cada producto?',
+        context: 'Día A: 1.000 productos con 10 m³ de agua. Día B: 500 productos con 7 m³. La comparación ya está calculada: son 10 litros por producto el día A y 14 el día B. Un m³ son 1.000 litros.',
         options: [
-          {title: 'Sí: consumió menos agua', text: 'Cualquier reducción total demuestra eficiencia.', feedback: 'También bajó la producción. Compara el agua utilizada por cada unidad producida.', score: 0},
-          {title: 'No: pasó de 10 a 14 L/unidad', text: 'El consumo por producto aumentó.', feedback: 'Exacto. Bajó el consumo total, pero aumentó la intensidad de uso de agua. Usar una base comparable cambia la conclusión.', score: 2},
-          {title: 'Falta conocer la tarifa', text: 'Sin el precio del agua no se puede calcular.', feedback: 'La tarifa permite estudiar costos. Para esta eficiencia física bastan el consumo y la producción.', score: 1}
+          {title: 'Sí, porque gastó menos en total', text: 'Mirar solo que pasó de 10 a 7 m³.', feedback: 'Ese día también hizo menos productos. Para saber si mejoró, compara el agua que usó por cada producto.', score: 0},
+          {title: 'No, cada producto necesitó más agua', text: 'Pasó de 10 a 14 litros por producto.', feedback: 'Exacto. La fábrica gastó menos agua en total, pero usó más para hacer cada producto. Así puedes hacer una comparación justa.', score: 2},
+          {title: 'Solo se puede saber con el precio del agua', text: 'Buscar primero cuánto cuesta cada litro.', feedback: 'El precio ayuda a comparar el dinero gastado. Para este reto basta con saber cuánta agua se usa y cuántos productos se hacen.', score: 1}
         ],
         correct: 1,
-        chart: {title: 'Consumo de agua por unidad · simulación', unit: 'L/unidad', max: 16, rows: [{label: 'Día A', value: 10}, {label: 'Día B', value: 14}]}
+        chart: {title: 'Litros de agua por producto · ejemplo', unit: 'L por producto', max: 16, rows: [{label: 'Día A', value: 10}, {label: 'Día B', value: 14}]}
       },
       {
         title: 'Mide para mejorar',
-        prompt: '¿Qué registro permite comprobar una mejora?',
-        context: 'Necesitas saber cuánto se usa y cuánto se produce durante periodos comparables.',
+        prompt: '¿Qué anotarías para saber si una mejora funciona?',
+        context: 'Compara cuánto usa la fábrica y cuántos productos hace durante el mismo tiempo.',
         options: [
-          {title: 'Solo facturas mensuales', text: 'Comparar únicamente el valor pagado.', feedback: 'Ayudan a seguir costos, pero mezclan tarifas, producción y operación. No bastan para atribuir un ahorro a la mejora.', score: 1},
-          {title: 'Colores de las canecas', text: 'Evaluar el desempeño mirando la separación.', feedback: 'Separar residuos puede ayudar, pero los colores no cuantifican el consumo de agua ni de energía.', score: 0},
-          {title: 'Medidores + balanza + producción', text: 'Registrar agua, energía, residuos y unidades producidas.', feedback: 'Calcula indicadores por una producción comparable y verifica los ahorros reales. Así detectas pérdidas y compruebas las mejoras.', score: 2}
+          {title: 'Solo el dinero de las facturas', text: 'Mirar cuánto pagó cada mes.', feedback: 'Las facturas ayudan a revisar el dinero. Pero el total también cambia con los precios y la cantidad de productos. Por sí solas no prueban el ahorro.', score: 1},
+          {title: 'Solo los colores de las canecas', text: 'Mirar si separan la basura.', feedback: 'Separar los residuos ayuda, pero los colores de las canecas no indican cuánta agua o energía se está usando.', score: 0},
+          {title: 'Agua, energía, residuos y productos', text: 'Usar medidores, una balanza y el registro de lo producido.', feedback: 'Con esos registros puedes comparar el gasto por producto, encontrar desperdicios y comprobar si las mejoras ayudan.', score: 2}
         ],
         correct: 2,
         chart: null
       },
       {
-        title: 'Invierte con un objetivo',
-        prompt: 'Reduce al menos 20 % del agua y de la energía.',
-        context: 'Presupuesto: 6 fichas. Base: 10 m³ y 400 kWh por 1.000 unidades. Costos y ahorros son estimaciones didácticas.',
+        title: 'Elige en qué invertir',
+        prompt: 'Usa al menos 20 % menos de agua y de energía.',
+        context: 'Tienes 6 fichas. La fábrica empieza con 10 m³ de agua y 400 kWh por cada 1.000 productos. Para cumplir la meta debes llegar a 8 m³ o menos y a 320 kWh o menos. Los costos y ahorros son ejemplos.',
         options: [
-          {title: 'Reúso validado + recuperación de calor', text: '6 fichas: agua de 10 a 7 m³ y energía de 400 a 300 kWh.', feedback: 'Cumples ambas metas del encargo. Valida calidad e inocuidad del reúso, diseño y mantenimiento de la recuperación de calor, y comprueba los ahorros medidos.', score: 2},
-          {title: 'Iluminación eficiente', text: '1 ficha: ahorro estimado de 20 kWh.', feedback: 'Aporta un ahorro, pero no alcanza la meta de energía ni reduce el agua. Puedes combinarla con otras medidas cuando el presupuesto lo permita.', score: 1},
-          {title: 'Evitar pérdidas de materia prima', text: '2 fichas: evitar 30 kg de residuos.', feedback: 'Tiene un beneficio ambiental valioso, pero por sí sola no cumple las dos metas de este encargo. La prioridad cambia con los objetivos.', score: 1}
+          {title: 'Usar agua de nuevo y aprovechar el calor', text: '6 fichas: el agua baja de 10 a 7 m³ y la energía de 400 a 300 kWh.', feedback: 'Cumples las dos metas. Antes de aplicar el plan, revisa que el agua sea segura para el nuevo uso y que el sistema de calor funcione bien. Después, mide para comprobar el ahorro.', score: 2},
+          {title: 'Luces que gastan menos', text: '1 ficha: ahorrar 20 kWh de energía.', feedback: 'Ayuda, pero no alcanza la meta de energía ni ahorra agua. Puedes combinarla con otras mejoras si te quedan fichas.', score: 1},
+          {title: 'Perder menos ingredientes', text: '2 fichas: evitar 30 kg de residuos.', feedback: 'Generar menos residuos también es valioso. Pero esta mejora sola no cumple las metas de agua y energía que te pidieron en el reto.', score: 1}
         ],
         correct: 0,
         chart: null
