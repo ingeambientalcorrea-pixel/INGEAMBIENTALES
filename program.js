@@ -41,31 +41,51 @@ window.PROGRAM_DATA = {
     "roles": [
       {
         "title": "Investigar lo que no se ve",
-        "text": "Salir al campo, tomar muestras y descubrir qué le pasa al agua, al aire o al suelo.",
+        "text": "Detectar qué le pasa al agua y al aire, tomar muestras y encontrar pistas para actuar.",
         "image": "assets/comic-agua.webp",
         "alt": "Ingeniera tomando muestras de agua con frasco y medidor",
-        "action": "Observar y preguntar"
+        "action": "Observar y preguntar",
+        "courses": [
+          "Diagnóstico de aguas",
+          "Diagnóstico del aire",
+          "Sistemas de información geográfica"
+        ]
       },
       {
         "title": "Diseñar soluciones",
-        "text": "Crear formas de usar menos agua y energía, y evitar que la contaminación llegue a la naturaleza.",
+        "text": "Crear soluciones para limpiar el agua, cuidar el aire y dar una nueva vida a los materiales.",
         "image": "assets/comic-circular.webp",
         "alt": "Ingeniero con medidor de energía y un diagrama de mejora de una fábrica",
-        "action": "Imaginar y probar"
+        "action": "Imaginar y probar",
+        "courses": [
+          "Tratamiento de aguas",
+          "Tratamiento del aire",
+          "Gestión de residuos sólidos"
+        ]
       },
       {
         "title": "Cuidar el territorio",
-        "text": "Ayudar a que una obra cuide las quebradas, el suelo y la vida que la rodea.",
+        "text": "Ayudar a que las obras y los proyectos protejan las quebradas, los bosques y las comunidades.",
         "image": "assets/comic-obra.webp",
         "alt": "Ingeniera con casco revisando el cuidado del agua en una obra",
-        "action": "Prevenir y proteger"
+        "action": "Prevenir y proteger",
+        "courses": [
+          "Ecología",
+          "Gestión de ecosistemas",
+          "Evaluación de impacto ambiental"
+        ]
       },
       {
         "title": "Liderar el cambio",
-        "text": "Unir a personas y comunidades para llevar una buena idea ambiental a la acción.",
+        "text": "Llevar una idea ambiental a la acción con empresas, comunidades y otros profesionales.",
         "image": "assets/comic-hero.webp",
         "alt": "Equipo de ingeniería ambiental trabajando junto a un paisaje andino",
-        "action": "Escuchar y trabajar en equipo"
+        "action": "Escuchar y trabajar en equipo",
+        "courses": [
+          "Formulación y evaluación de proyectos ambientales",
+          "Gestión ambiental",
+          "Emprendimiento e innovación"
+        ]
       }
     ]
   },
@@ -73,56 +93,6 @@ window.PROGRAM_DATA = {
     "title": "De la pregunta a la solución",
     "subtitle": "Un camino para pasar de la curiosidad a las soluciones. Así crecen tus herramientas durante la carrera.",
     "url": "https://www.colmayor.edu.co/wp-content/uploads/2023/05/INGENIERI%CC%81A-AMBIENTAL-1323.pdf",
-    "blocks": [
-      {
-        "levels": "1–2",
-        "title": "Empieza por la curiosidad",
-        "text": "Explora la vida, la química y las matemáticas para entender lo que te rodea.",
-        "connection": "Hacer buenas preguntas.",
-        "image": "assets/anime-agua.webp",
-        "alt": "Quebrada y entorno natural para observar y aprender"
-      },
-      {
-        "levels": "3–4",
-        "title": "Conoce el territorio",
-        "text": "Descubre cómo se conectan los bosques, el suelo, el agua y las personas.",
-        "connection": "Ver cómo todo se conecta.",
-        "image": "assets/anime-bosque.webp",
-        "alt": "Bosques andinos conectados en el territorio"
-      },
-      {
-        "levels": "5–6",
-        "title": "Mide lo que está pasando",
-        "text": "Usa mapas, muestras e instrumentos para saber qué necesita mejorar.",
-        "connection": "Buscar respuestas con datos.",
-        "image": "assets/anime-aire.webp",
-        "alt": "Barrio andino con puntos para medir la calidad del aire"
-      },
-      {
-        "levels": "7",
-        "title": "Diseña una respuesta",
-        "text": "Aprende a limpiar agua, aire y suelo, y pon tus ideas a prueba.",
-        "connection": "Probar y mejorar.",
-        "image": "assets/anime-circular.webp",
-        "alt": "Instalación industrial con equipos para mejorar el uso del agua y la energía"
-      },
-      {
-        "levels": "8–9",
-        "title": "Piensa en lo que viene",
-        "text": "Planea proyectos, evita residuos y revisa cómo tus decisiones afectan a otros.",
-        "connection": "Elegir pensando en el futuro.",
-        "image": "assets/anime-residuos.webp",
-        "alt": "Campus con separación y cuidado de los materiales"
-      },
-      {
-        "levels": "10",
-        "title": "Lleva tu idea al mundo",
-        "text": "Aplica lo aprendido en una práctica profesional o en tu trabajo de grado.",
-        "connection": "Hacer parte de una solución real.",
-        "image": "assets/anime-obra.webp",
-        "alt": "Proyecto en un paisaje andino para aplicar lo aprendido"
-      }
-    ],
     "semesters": [
       {
         "number": 1,

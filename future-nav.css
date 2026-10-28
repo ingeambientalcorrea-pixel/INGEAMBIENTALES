@@ -1,0 +1,23 @@
+/* A clear invitation to explore the degree, on every screen. */
+.topbar nav a.future-nav{display:flex;align-items:center;justify-content:center;gap:11px;min-height:62px;padding:11px 18px;border:2px solid #203357;border-radius:15px;background:linear-gradient(115deg,#ffc354,#ffad66);color:#203357;box-shadow:0 4px 0 #203357,0 8px 20px #f6a54b36;text-align:left;white-space:nowrap;}
+.topbar nav a.future-nav:hover{background:linear-gradient(115deg,#ffd37d,#ffbc83);border-color:#203357;box-shadow:0 4px 0 #203357,0 8px 22px #f6a54b50;transform:none;}
+.topbar nav a.future-nav.active{background:#ffc354;border-color:#203357;color:#203357;box-shadow:0 4px 0 #203357,0 0 0 4px #ffbf522b;}
+.topbar nav a.future-nav:after{display:none;}
+.future-nav-icon{width:31px;height:31px;flex:0 0 31px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round;}
+.topbar nav .future-nav-copy{display:flex;flex-direction:column;gap:3px;line-height:1.2;}
+.topbar nav .future-nav-copy strong{font-family:Manrope,'DM Sans',sans-serif;font-size:19px;font-weight:800;letter-spacing:-.025em;}
+.topbar nav .future-nav-copy small{font-size:12px;line-height:1.3;font-weight:650;}
+.topbar nav .future-nav-copy small>span{margin-left:3px;font-size:15px;}
+@media(max-width:1200px){.topbar nav a.future-nav{gap:9px;padding:10px 14px;min-height:60px;}.future-nav-icon{width:28px;height:28px;flex-basis:28px;}.topbar nav .future-nav-copy strong{font-size:18px;}.topbar nav .future-nav-copy small{font-size:11px;}}
+@media(max-width:960px){.topbar nav{align-items:center;}.topbar nav a.future-nav{min-width:220px;}}
+@media(max-width:640px){
+ .topbar nav{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,.75fr) minmax(0,1.7fr);align-items:center;gap:7px;width:100%;}
+ .topbar nav a:not(.future-nav){padding:12px 5px;text-align:center;font-size:12px;white-space:normal;}
+ .topbar nav a.future-nav{min-width:0;min-height:62px;gap:7px;padding:9px 8px;border-radius:12px;white-space:normal;}
+ .future-nav-icon{width:25px;height:25px;flex-basis:25px;}
+ .topbar nav .future-nav-copy strong{font-size:17px;}
+ .topbar nav .future-nav-copy small{font-size:10px;line-height:1.35;}
+ .topbar nav .future-nav-copy small>span{font-size:12px;margin-left:1px;}
+}
+@media(max-width:380px){.topbar nav{gap:5px;grid-template-columns:minmax(0,.95fr) minmax(0,.7fr) minmax(0,1.8fr);}.topbar nav a:not(.future-nav){font-size:11px;}.topbar nav a.future-nav{padding:9px 7px;gap:6px;}.future-nav-icon{width:22px;height:22px;flex-basis:22px;}.topbar nav .future-nav-copy strong{font-size:16px;}}
+@media print{.future-nav{display:none!important;}}

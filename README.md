@@ -13,7 +13,7 @@ Aplicativo interactivo de orientación vocacional para estudiantes de último a�
 
 Presentación de aventura para estudiantes de bachillerato, con profesionales jóvenes adultos de estilo cómic, escenarios andinos ilustrados, textos grandes, instrumentos visuales y seis minijuegos con mecánicas diferentes. Cada reto presenta un personaje distinto con vestimenta, elementos de protección y herramientas acordes a su trabajo: Valeria (agua), Tomás (biodiversidad), Sara (obra), Mateo (eficiencia industrial), Nicolás (aire) y Mariana (materiales). Incluye modo docente, de 1 a 6 equipos, votaciones A/B/C, temporizador opcional, retroalimentación, simuladores, bitácora descargable, lectura opcional e información del programa de Ingeniería Ambiental del Colegio Mayor de Antioquia.
 
-La versión escolar usa frases breves, explica las unidades junto a los gráficos y deja los números avanzados como información opcional. La sección del programa combina imágenes con un recorrido visual y muestra todas las materias por semestre, con sus créditos y el enlace a la malla oficial.
+La versión escolar usa frases breves, explica las unidades junto a los gráficos y deja los números avanzados como información opcional. El acceso «Tu futuro» destaca como invitación principal a conocer la carrera. El programa presenta primero Gratuidad, Presupuesto Participativo e inscripciones, con sus condiciones y periodos. Las competencias se ilustran y conectan con materias reales del pénsum. La malla permite elegir entre los diez semestres y consultar sus materias y créditos sin recorrer una página extensa.
 
 Videos incluidos:
 
@@ -65,10 +65,11 @@ Los escenarios y datos de `cases.js` son **simulaciones didácticas ficticias**.
 - `worlds-integration.js`: integra los seis mundos, las ilustraciones y las insignias.
 - `cases.js`: cuatro casos didácticos.
 - `program.js`: información institucional, malla por semestre, videos y fuentes.
-- `program-garden.css`: imágenes orgánicas, recorrido de aprendizaje y malla del programa.
+- `program-garden.css`: programa compacto, prioridades de ingreso, competencias y malla interactiva.
+- `future-nav.css`: acceso principal destacado a «Tu futuro».
 - `assets/`: imágenes, fuentes y licencias.
 - `.nojekyll`: indica a GitHub Pages que publique los archivos estáticos directamente.
 
 ## Verificación
 
-Se comprobaron los seis recorridos y minijuegos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.
+Se comprobaron los seis recorridos y minijuegos en Chromium, puntajes iniciales y revisión de votos, temporizador, persistencia, reinicio, exportación, presupuesto, simuladores, navegación por teclado y vista móvil de 390 px. También se verificaron el acceso principal «Tu futuro», los apoyos y sus periodos, las competencias con materias oficiales, los dos videos y el selector de diez semestres mediante ratón y teclado. La sección del programa se revisó en 390, 768 y 1440 px. Las rutas de recursos son relativas y la navegación por fragmentos funciona en la subruta del repositorio.
